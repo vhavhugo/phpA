@@ -2,11 +2,12 @@
 
 class Pessoa
 {
-    public $nome;
-    public $cpf;
+    protected $nome;
+    private $cpf;
 
     public function __construct(string $nome, CPF $cpf)
     {
+        $this->validaNomeTitular($nome);
         $this->nome = $nome;
         $this->cpf = $cpf;
     }

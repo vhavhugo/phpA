@@ -1,14 +1,13 @@
 <?php
 
+// Titular é uma pessoa
 class Titular extends Pessoa
 {
     private $endereco;
 
-    public function __construct(string $cpf, string $nome, Endereco $endereco)
+    public function __construct(CPF $cpf, string $nome, Endereco $endereco)
     {
-        $this->cpf = $cpf;
-        $this->validaNomeTitular($nome);
-        $this->nome = $nome;
+        parent::__construct($nome, $cpf);
         $this->endereco = $endereco;
     }
     
