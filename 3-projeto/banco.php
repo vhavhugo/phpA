@@ -1,9 +1,15 @@
 <?php
 
-require_once 'src/Conta.php';
-require_once 'src/Endereco.php';
-require_once 'src/Titular.php';
-require_once 'src/CPF.php';
+require_once 'src/Modelo/Conta/Conta.php';
+require_once 'src/Modelo/Endereco.php';
+require_once 'src/Modelo/Pessoa.php';
+require_once 'src/Modelo/Conta/Titular.php';
+require_once 'src/Modelo/CPF.php';
+
+use Tiic\Banco\Modelo\Conta\Titular;
+use Tiic\Banco\Modelo\Endereco;
+use Tiic\Banco\Modelo\CPF;
+use Tiic\Banco\Modelo\Conta\Conta;
 
 $endereco = new Endereco('Praia Grande', 'Aviação', 'Rua 7', "71B");
 $hugo = new Titular(new CPF('123.456.789-12'),'Hugo do Valle', $endereco);

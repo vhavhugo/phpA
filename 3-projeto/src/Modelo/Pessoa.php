@@ -1,5 +1,7 @@
 <?php
 
+namespace Tiic\Banco\Modelo;
+
 class Pessoa
 {
     protected $nome;
@@ -29,4 +31,5 @@ class Pessoa
             exit();
         }
     }
+    
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Tiic\Banco\Modelo;
+
 //Funcionário é uma pessoa
 class Funcionario extends Pessoa
 {

@@ -1,5 +1,10 @@
 <?php
 
+namespace Tiic\Banco\Modelo\Conta;
+use Tiic\Banco\Modelo\Pessoa;
+use Tiic\Banco\Modelo\CPF;
+use Tiic\Banco\Modelo\Endereco;
+
 // Titular é uma pessoa
 class Titular extends Pessoa
 {

@@ -1,5 +1,8 @@
 <?php
 
+namespace Tiic\Banco\Modelo;
+use Tiic\Banco\Modelo\Cpf;
+
 class CPF{
     private $numero;
 

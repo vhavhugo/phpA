@@ -1,5 +1,7 @@
 <?php
 
+namespace Tiic\Banco\Modelo;
+
 class Endereco{
     private $cidade;
     private $bairro;

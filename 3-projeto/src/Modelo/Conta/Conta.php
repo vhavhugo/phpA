@@ -1,5 +1,7 @@
 <?php
 
+namespace Tiic\Banco\Modelo\Conta;
+
 class Conta{
 
     private $titular;
