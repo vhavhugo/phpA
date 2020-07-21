@@ -1,11 +1,20 @@
 <?php
-$nomes = "Giovanni, João, Maria, Pedro";
-$array_nomes = explode(",",$nomes);
 
-foreach($array_nomes as $nome){
-    echo "<p>Olá $nome</p>";
-}
+require 'ArrayUtils.php';
 
-$nomesJuntos = implode(",", $array_nomes);
+$correntistas_e_compras = [
+	"Giovanni",
+	"João",
+	12,
+	"Maria",
+	25,
+	"Luis",
+	"Luiza",
+	"12"
+];
 
-echo "$nomesJuntos";
+echo '<pre>';
+var_dump($correntistas_e_compras);
+ArrayUtils::remover(12, $correntistas_e_compras);
+var_dump($correntistas_e_compras);
+echo '<pre>';
