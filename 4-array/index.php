@@ -1,15 +1,18 @@
 <?php
-require 'Calculadora.php';
 
-$notas = [5, 9, 10, 3, 10, 5];
+$saldos = [
+    2500,
+    3800,
+    4400,
+    1000,
+    8700,
+    9200
+];
 
-
-$calculadora = new Calculadora();
-$media = $calculadora->calculaMedia($notas);
-
-if($media){
-    echo "A media é: $media";
-
-}else{
-    echo "Não foi possível calcular a média";
+foreach($saldos as $saldo){
+    echo "<p>O saldo é $saldo</p>";
 }
+
+sort($saldos);
+
+echo "O menor salso é: $saldos[0]";
