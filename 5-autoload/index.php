@@ -1,7 +1,7 @@
 <?php
 namespace Tiic;
 
-spl_autoload_register();
+require 'autoload.php';
 
 $correntistas_e_compras = [
 	"Giovanni",
