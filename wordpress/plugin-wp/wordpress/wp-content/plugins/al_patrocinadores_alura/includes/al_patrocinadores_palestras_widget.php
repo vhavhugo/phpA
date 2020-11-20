@@ -38,4 +38,12 @@ class PatrocinadoresAlura extends WP_Widget{
         </p>
         <?php
     }
+
+    public function update($new_instance, $old_stance){
+        $instance = array();
+        $instance['caelum'] = !empty($new_instance['caelum']) ? strip_tags($new_instance['caelum']) : '';
+        $instance['casa_do_codigo'] = !empty($new_instance['casa_do_codigo']) ? strip_tags($new_instance['casa_do_codigo']) : '';
+        $instance['hipters'] = !empty($new_instance['hipters']) ? strip_tags($new_instance['hipters']) : '';
+        return $instance;
+    }
 }
