@@ -10,6 +10,8 @@
     <link href="<?= get_template_directory_uri() . '/css/normalize.css' ?> " rel="stylesheet">
     <link href="<?= get_template_directory_uri() . '/css/bootstrap.css' ?> " rel="stylesheet">
     <link href="<?= get_template_directory_uri() . '/css/header.css' ?> " rel="stylesheet">
+    <link href="<?= get_template_directory_uri() . '/css/' . $estiloPagina ?> " rel="stylesheet">
+    <link href="<?= get_template_directory_uri() . '/css/footer.css' ?> " rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
