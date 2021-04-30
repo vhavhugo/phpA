@@ -27,7 +27,7 @@ function funcao1()
     echo 'Saindo da função 1' . PHP_EOL;
 }
 
-#Multiplas execuções
+#Multiplas exceções
 
 function funcao1()
 {
