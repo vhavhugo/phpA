@@ -1,0 +1,15 @@
+Try catch
+
+function funcao1()
+{
+    echo 'Entrei na função 1' . PHP_EOL;
+    try{
+    $arrayFixo = new SplFixedArray(2);
+    $arrayFixo[0] = "Valor";
+    } catch (RuntimeException $problema){
+        echo "aconteceu um erro na função 1" . PHP_EOL;
+    }
+    //$divisao = intdiv(5, 0);
+    funcao2();
+    echo 'Saindo da função 1' . PHP_EOL;
+}
