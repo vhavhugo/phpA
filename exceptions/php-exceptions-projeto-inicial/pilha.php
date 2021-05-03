@@ -12,12 +12,7 @@ function funcao1()
        // echo $erroOuExcecao->getTrace() . PHP_EOL; //pega como um array
         echo $erroOuExcecao->getTraceAsString() . PHP_EOL; //pega formatado como string - trilha de execução até chegar aonde esse erro acoteceu
 
-        //echo "Na função 1, eu resolvi o problema da função 2" . PHP_EOL;
-        throw new RuntimeException(
-            'Exceção foi tratada, mais, pega ai',
-            1,
-            $erroOuExcecao
-        );
+        
     }
     echo 'Saindo da função 1' . PHP_EOL;
 }
